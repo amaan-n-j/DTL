@@ -9,6 +9,7 @@
 \usepackage{graphicx}
 \usepackage{tabularx}
 \geometry{ a4paper, total= {170mm, 257mm}, left=20mm, top=20mm,}
+
 \newenvironment{Figure}
   {\par\medskip\noindent\minipage{\linewidth}}
   {\endminipage\par\medskip}
@@ -62,14 +63,13 @@ computer network is an interconnected collection of
 autonomous computers where interconnected means
 that the computers can exchange information and
 autonomous means that no computer can start, stop or
-control another computer connected to the network. Fig
-1 gives an example of a network in a school comprising
+control another computer connected to the network.Fig\ref{fig:network1} gives an example of a network in a school comprising
 of local area network or LAN connecting computers with each other, the internet, and various servers \cite{4}.\\
 
 \begin{Figure}
  \centering
  \includegraphics[width=\linewidth]{networkrepresent.png}
- \captionof{figure}{Representation of Network in a school}
+ \captionof{figure}{Representation of Network in a school}\label{fig:network1}
 \end{Figure}
 
 \section*{II. Types Of Network Configuration}
@@ -86,13 +86,14 @@ they communicate with each other on an equal footing.
 Files can be shared across the network and all the
 computers on the network can share devices such as
 printers or scanners, which are connected to any one
-computer.Fig 2 represents how the computers are
+computer.Fig \ref{fig:p2p} represents how the computers are
 connected in a peer-to-peer networks \cite{4}.
 
 \begin{Figure}
  \centering
  \includegraphics[width=\linewidth]{peer.png}
  \captionof{figure}{Peer to Peer networking}
+\label{fig:p2p}
 \end{Figure}
 
 \subsection*{B. Client/server networks}
@@ -105,13 +106,14 @@ the network access of the other computers which are
 referred to as the "client" computers. Only the network
 administrator will have access rights to the server while
 others cannot. Others can only use the client computers.
-Fig 3 represents how the computers are connected in a
+Fig \ref{fig:csn} represents how the computers are connected in a
 client/server network \cite{4}.
 
 \begin{Figure}
  \centering
  \includegraphics[width=\linewidth]{client.png}
  \captionof{figure}{Client Server Networking}
+\label{fig:csn}
 \end{Figure}
 
 \section*{III. COMPONENTS OF A NETWORK}
@@ -178,12 +180,13 @@ topology to connect the computers in a network. This is
 the oldest form of topologies. This is a failure model.
 Most bus topologies allow electric or electro-magnetic
 signals to travel in both directions. A LAN with BUS
-topology is represented in Fig 4.
+topology is represented in Fig \ref{fig:lan}.
 
 \begin{Figure}
  \centering
  \includegraphics[width=\linewidth]{bus.png}
  \captionof{figure}{LAN with bus topology}
+\label{fig:lan}
 \end{Figure}
 
 \subparagraph{b) Ring topology:}
@@ -200,12 +203,13 @@ topologies are ideally suited for token passing access
 methods. The token gets passed around the ring, and
 only the node that holds the token can transmit data.
 Ring topologies are quite rare. A LAN with RING
-topology is represented in Fig 5.
+topology is represented in Fig \ref{fig:LAN2}.
 
 \begin{Figure}
  \centering
  \includegraphics[width=\linewidth]{ring.png}
  \captionof{figure}{LAN with ring topology}
+\label{fig:LAN2}
 \end{Figure}
 
 \subparagraph{c) Star topology:}
@@ -223,12 +227,13 @@ disadvantages of BUS topology and RING topology,
 the STAR topology is invented. This is not a failure
 model. But it is a standard model and now-a-days this
 topology is commonly used everywhere. A LAN with
-STAR topology is represented in Fig 6.
+STAR topology is represented in Fig \ref{fig:LAN3}.
 
 \begin{Figure}
  \centering
  \includegraphics[width=\linewidth]{star.png}
  \captionof{figure}{LAN with star topology}
+\label{fig:LAN3}
 \end{Figure}
 
 \subparagraph{d) Mesh topology}
@@ -261,12 +266,13 @@ share a cable nevertheless and wish to communicate,
 they must do it indirectly. On personal computers we
 are using modem to communicate indirectly with other
 computer. WAN connecting two different networks is
-represented in Fig 7.
+represented in Fig \ref{fig:WAN}.
 
 \begin{Figure}
  \centering
  \includegraphics[width=\linewidth]{wan.png}
  \captionof{figure}{WAN connecting two different networks}
+\label{fig:WAN}
 \end{Figure}
 
 \subsection*{C. Metropolitan Area Network}
