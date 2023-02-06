@@ -1,0 +1,59 @@
+\documentclass{article}
+\usepackage{refstyle}
+\usepackage{caption}
+\usepackage{graphicx}
+\usepackage{multirow}
+\usepackage{csvsimple}
+\title{DTL Assignment 3}
+\date{22nd November 2022}
+\begin{document}
+\pagenumbering{gobble}
+\maketitle
+\clearpage
+\pagenumbering{roman}
+\tableofcontents
+\clearpage
+\section{Introducing images in Latex}
+\subsection{Bugatti}
+Automobiles Ettore Bugatti was a German then French manufacturer of high-performance automobiles. The company was founded in 1909 in the then-German city of Molsheim, Alsace, by the Italian-born industrial designer Ettore Bugatti. The cars were known for their design beauty and for their many race victories.\\
+
+\begin{figure}[h]
+\includegraphics[scale=0.25]{Bugati.jpg}
+\caption{Bugatti}
+\label{fig : Bugatti}
+[\ref{fig : Bugatti}] shows classic Bugatti.\\
+\end{figure}
+\clearpage
+\subsection{Bugatti Watch}
+In collaboration with Jacob and Co. Bugatti embarks into a new era: the partnership between the French manufacturer of hyper-sportscars Bugatti and the New York and Geneva-based, leading supplier of highly complex timepieces Jacob and Co. not only unites two companies that have always valued innovative design, but who have passionately expanded the boundaries of what is mechanically possible. Now both pioneers will create a range of exclusive Bugatti branded products together. Jacob Arabov, founder of Jacob and Co., compares the sensation aroused by his sophisticated timepieces with the same adrenaline rush that is unleashed by the mere sight of the Bugatti Chiron: a feeling of energy, movement and strength that is almost impossible to hold back.
+\\
+\begin{figure}[h]
+\includegraphics[scale= 0.8]{watch.jpeg}
+\caption{Bugatti Watch}
+\label{fig : Bugatti Watch}
+[\ref{fig : Bugatti Watch}] above shows the image of one of seven wonders of the world Eiffel Tower.
+\end{figure}
+
+\section{Introducing tables in Latex}
+\subsection{Table1}
+\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|}
+\hline \hline
+Audio & Audibility & Decision  & \multicolumn{7}{|c|}{Sum of Extracted Bits}\\
+\hline
+\multirow{2}{*}{Police} & \multirow{2}{*}{5} & soft & 1 & -1 & 1 & 1 & -1 & -1 & 1\\ 
+&  & hard & 2 & -4 & 4 & 4 & -2 & -4 & 4\\ \hline
+\multirow{2}{*}{Beethoven} & \multirow{2}{*}{5} & soft & 1 & -2 & 1 & -1 & -3 & 2 & 5\\
+ &  & hard & 2 & 4 & 4 & 5 & 1 & -4 & -5\\ \hline
+\multirow{2}{*}{Police} & \multirow{2}{*}{5} & soft & 1 & 1 & 2 & -1 & 1 & 2 & 1\\
+ &  & hard & 2 & 3 & 5 & -3 & -2 & 2 & 6\\
+\hline \hline
+\end{tabular}
+\vspace{1cm}
+\\
+Noise pollution has been recognized as one of the major hazard that impacts the quality of life all around the world. Because of the rapid increase in technology, noise pollution has reached to a disturbing level over the years which needs to be studied and controlled to avoid different health effects.
+\subsection{Table using csv file}
+\csvautotabular{grades.csv}
+\vspace{0.7cm}
+\\
+Above table shows the list of students of College of Engineering, Pune Technological University who have performed exceptionally well academically.
+\end{document}
